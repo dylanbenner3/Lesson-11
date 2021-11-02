@@ -1,0 +1,254 @@
+div#topmenu ul{
+    text-align:left;
+    list-style:none;
+
+}
+div#topmenu ul li {
+    font:bold 12px/18px sans-serif;
+    display:inline-blick;
+    position:relative;
+    padding: 15px 20px;
+    background:rgb(255, 104, 104)
+    cursor:pointer;
+
+}
+
+div#topmenu ul li:hover {
+    background:sandybrown
+    color:springgreen;
+    
+}
+
+div#topmenu ul li ul {
+    padding: 0;
+    position:absolute;
+    top:48px;
+    left:-10000px;
+    width:150px;
+}
+
+div#topmenu ul li ul li {
+    background:tomato;
+    display:block;
+    color:yellow;
+
+}
+
+div#topmenu ul li ul li:hover {
+    background: wheat;
+}
+div#topmenu ul li:hover ul {
+    display:block;
+    left:0px
+}
+
+
+
+.topmenu ul{text-align:right;
+    list-style:none;}
+    
+
+.topmenu ul li {
+        font:menu;
+        display:inline-block;
+        position:relative;
+        padding: 20px 30px;
+        background:rgb(104, 195, 255);
+        cursor:pointer;
+        
+    }
+    .topmenu ul li:hover {
+        background:sandybrown
+        color:sandybrown;
+        
+    }
+    .topmenu ul li ul {
+        padding: 0;
+        position:absolute;
+        top:60px;
+        left:-10000px;
+        width:150px;
+    }
+    .topmenu ul li ul li {
+        background:rgb(60, 29, 146);
+        display:block;
+        color:rgb(209, 161, 221);
+    
+    }
+    .topmenu ul li ul li:hover {
+        background: rgb(0, 31, 134);
+    }
+    .topmenu ul li:hover ul {
+        display:block;
+        left:0px}
+    .one {text-align: left;}
+    .two {text-align: right;}
+    .three {text-align: right;
+    }
+    body {background-color: rgb(228, 164, 118);}
+    .containter {width: 60%;
+    }
+.gallery {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-gap: 10px;
+
+}
+
+.dot1{grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: 1;
+    grid-row:1;
+    
+    
+
+}
+
+.dot2{grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: 2;
+    grid-row:1;
+    
+
+}
+.dot3{grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: 3;
+    grid-row:1;
+
+}
+.dot4{grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 1;
+    grid-row:2;
+
+}
+.dot5{grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 2;
+    grid-row:2;
+
+}
+.dot6{grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 3;
+    grid-row:2;
+
+
+}
+.dot7{grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: 1;
+    grid-row:3;
+
+
+}
+.dot8{grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: 2;
+    grid-row:3;
+
+}
+.dot9{grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: 3;
+    grid-row:3;
+
+}
+.dot10{grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: 1;
+    grid-row:4;
+
+}
+.dot11{grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: 2;
+    grid-row:4;
+
+}
+.dot12{grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: 3;
+    grid-row:4;
+
+}
+img {max-width:100%;
+height:auto;}
+.topmenu {height: 3em;
+    padding:10px 15px;
+    */position:fixed;*/
+    width:100%;
+
+}
+.menu-icon {
+    font-size: 2em;
+    color:black;
+
+}
+nav {position:absolute;
+    background-color:darkgreen;
+top: 1em;
+left:0;
+width:100%;
+}
+nav ul {list-style-type: none;
+max-height:0em;
+overflow: hidden;
+transition: max-height 0.5s;}
+nav ul li a {display:block;
+    padding:.75em 1.75 em;
+    color:rgb(251, 255, 254);
+    text-decoration: none;
+
+}
+nav ul li a :hover, nav ul li a:focus {
+    color:cyan;
+}
+#checkbox {display:none
+}
+#checkbox:checked~nav ul {
+    max-height:11em;
+}
+@media (min-width:768px)
+{
+    .menu-icon{
+        display:none;
+
+    }
+    nav{position:relative;
+    top:-1em;}
+    nav ul{
+        max-height: 10.75em;
+        padding:5px 0;}
+        nav ul li{display:inline-block;
+        padding-left:1em;}
+    
+    }
+}
+
+   
